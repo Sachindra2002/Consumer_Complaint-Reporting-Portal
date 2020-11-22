@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>National Consumer Complaint Reporting Portal</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="CSS/contactUs.css">
+        <link rel="icon" type="image/png" href="images/icon1.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+    </head>
+    <body>
+        <h1>The National Consumer Complaint Reporting Portal</h1>
+        <h2>Get in touch with us!</h2>
+        <div class="container">
+        <form method="POST">
+            <p><b>Email:</b></p>
+            <input type="text" name ="email">
+            <p><b>Description</b></p>
+            <textarea name="body" placeholder="Enter Description"></textarea>
+            <input type="submit" value="Send Inquiry" onclick="sendEmail()"/>
+        </form>
+        </div>
+        <script type="text/javascript">
+
+            function sendEmail()
+            {
+                var email = document.getElementById('email');
+                var description = document.getElementById('body')
+                Email.send({
+                    Host: "smtp.elasticemail.com",
+                    Username: "memepreter@gmail.com",
+                    Password: "25A07A1E3AEB0FB89A186539245348552697",
+                    To: "sachindra2002@gmail.com",
+                    From: "memepreter@gmail.com",
+                    Subject: "Inquiry",
+                    Body: email 
+                }).then(function (message) {
+                    alert("Email sent sucessfully")
+                }
+                );
+            }
+        </script>
+    </body>
+</html>

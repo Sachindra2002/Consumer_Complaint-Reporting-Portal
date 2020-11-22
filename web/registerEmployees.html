@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>National Consumer Complaint Reporting Portal</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="CSS/registerEmployees.css">
+        <link rel="icon" type="image/png" href="images/icon1.png">
+    </head>
+    <body>
+        <script type="text/javascript">
+            function Validate()
+            {
+                var password = document.getElementById("passWord").value;
+                var confirmPassword = document.getElementById("confirmPassword").value;
+                if (password != confirmPassword)
+                {
+                    alert("Passwords entered do not match!");
+                    return false;
+                }
+                return true;
+            }
+        </script>       
+        <div class="container">
+            <h3>Create an Employee Account</h3>
+            <form action="AdminsHomePage" method="GET">
+                <input type="hidden" name="command" value="ADD"/>
+                <p><b>Select Employee Role</b></p>
+                <select name="role">
+                    <option value="Admin">Admin</option>
+                    <option value="Officer">Officer</option>
+                </select>
+                <p><b>Enter First Name :</b></p>
+                <input type="text" name="firstName" placeholder="Enter first name" required>
+                <p><b>Enter Last Name :</b></p>
+                <input type="text" name="lastName" placeholder="Enter last name" required>
+                <p><b>Enter Preferred Username :</b></p>
+                <input type="text" name="uname" placeholder="Enter Preferred username" required>
+                <p><b>Enter Email :</b></p>
+                <input type="text" name="email" placeholder="Enter email address" required>
+                <p><b>Enter Password :</b></p>
+                <input type="password" name="pass" id="passWord" placeholder="Enter password" required>
+                <p><b>Enter Password again to confirm :</b></p>
+                <input type="password" id="confirmPassword" placeholder="Re-enter password for confirmation"/>
+                <br>
+                <br>
+                <input type="submit" value="Submit" onclick="return Validate()">
+            </form>
+            <a id="home" href="adminHomePage.jsp">Go back to home</a>
+        </div>
+    </body>
+</html>

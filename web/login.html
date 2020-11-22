@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>National Consumer Complaint Reporting Portal</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="CSS/login.css">
+        <link rel="icon" type="image/png" href="images/icon1.png">
+    </head>
+    <body>
+        <br>
+        <br>
+        <h1>Welcome to the National Consumer Complaint Reporting Portal </h1>
+        <div class="container">
+            <img src="images/avatar.png" class="avatar"/>
+        <h3>Login Here</h3>
+         <form action="LoginServlet" method="POST">
+                <p><b>Username</b></p>
+                <input type="text" name="uname"  placeholder="Enter username" autofocus required>
+                <p><b>Password</b></p>
+                <input type="password" name="password" placeholder="Enter password" autofocus required><br>
+                <br>
+                <input type="submit" value="Sign in">
+        </form>
+        <br>
+        <a href="register.html">Not Registered?</a><br>
+        <a id="home" href="index.html">Go back to home</a>
+        </div>
+    </body>
+</html>
+

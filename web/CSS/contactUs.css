@@ -1,0 +1,52 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 19, 2020, 3:52:03 PM
+    Author     : Sachindra Rodrigo
+*/
+
+body{
+    background-image: url(../images/edi.png);
+    margin: 0px;
+    padding: 0px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: sans-serif;
+    background-repeat: no-repeat;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+.container
+{
+    width: 350px;
+    height: 350px;
+    background: lightcyan;
+    color: black;
+    top: 55%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 6px;
+}
+a{
+    text-decoration: none;
+    color:darkgray;
+    font-size: 16px;
+    line-height: 20px;
+}
+a :hover{
+    color: turquoise;
+}

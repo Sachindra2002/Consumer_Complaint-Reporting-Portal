@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>National Consumer Complaint Reporting Portal</title>
+        <link type="text/css" rel="stylesheet" href="CSS/logComplaint.css">
+        <link rel="icon" type="image/png" href="images/icon1.png">
+    </head>
+    <body>
+        <h1>National Consumer Complaint Reporting Portal</h1>
+        <div class="container">
+            <h3>Lodge a Complaint</h3>
+            <form action="complainersHomePage" method="GET">
+                <input type="hidden" name="command" value="ADDCOMPLAINT">
+                <p><b>Select Complaint Category :</b></p>
+                <select name="category">
+                    <option value="Faulty Product">Faulty Product</option>
+                    <option value="Poor Quality">Poor Quality</option>
+                    <option value="Delivery Issues">Delivery Issues</option>
+                    <option value="Refund Issues">Refund Issues</option>
+                    <option value="Overcharging">Overcharging</option>
+                    <option value="Misleading price">Misleading Price</option>
+                    <option value="Misleading Advertisement">Misleading Advertisement</option>
+                </select>
+                <p><b>Select Your City :</b></p>
+                <select name="city">
+                    <option value="Colombo">Colombo</option>
+                    <option value="Negombo">Negombo</option>
+                    <option value="Kandy">Kandy</option>
+                    <option value="Galle">Galle</option>
+                    <option value="Gampaha">Gampaha</option>
+                    <option value="Jaffna">Jaffna</option>
+                    <option value="Anuradhapura">Anuradhapura</option>
+                    <option value="Trincomalee">Trincomalee</option>
+                </select>
+                <p><b>Enter Description of Complaint :</b></p>
+                <input type="text" name="description" placeholder="Enter Description" class="in" required>
+                <p><b>Enter Email :</b></p>
+                <input type="text" name="email" placeholder="Enter Email Address" class="in" required><br>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+            <a id="home" href="complainerHomePage.jsp">Go back to home</a>
+        </div>
+    </body>
+</html>
+

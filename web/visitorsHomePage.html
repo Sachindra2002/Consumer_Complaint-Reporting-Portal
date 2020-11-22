@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>National Consumer Complaint Reporting Portal</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="CSS/visitorsHomePage.css">
+        <link rel="icon" type="image/png" href="images/icon1.png">
+    </head>
+    <body>
+        <br>
+        <h1>National Consumer Complaint Reporting Portal</h1>
+        <br>
+        <br>
+        <h1>Visitor</h1>
+        <div class="container">
+            <form action="visitorServlet" method="GET">
+                <p><b>Select Complaint Category :</b></p>
+                <select name="category">
+                    <option value="Faulty Product">Faulty Product</option>
+                    <option value="Poor Quality">Poor Quality</option>
+                    <option value="Delivery Issues">Delivery Issues</option>
+                    <option value="Refund Issues">Refund Issues</option>
+                    <option value="Overcharging">Overcharging</option>
+                    <option value="Misleading price">Misleading Price</option>
+                    <option value="Misleading Advertisement">Misleading Advertisement</option>
+                    <option value="Refund Issues">Refund Issues</option>
+                </select><br>
+                <br>
+                <br>
+                <input type="submit" value="Search">
+            </form><br>
+            <a href="login.html">Lodge a Complaint</a><br>
+            <a href="index.html">Go back to home</a>
+        </div>
+    </body>
+</html>
